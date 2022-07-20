@@ -10,5 +10,18 @@ public class Test1 {
     // 获取CPU的核数
     // CPU密集型，IO密集型
     System.out.println(Runtime.getRuntime().availableProcessors());
+
+
+
+
+
   }
+
+
+
+
+
+
 }
+
+
