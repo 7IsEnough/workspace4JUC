@@ -8,12 +8,13 @@ import java.util.concurrent.TimeUnit;
  */
 public class JMMDemo {
 
-  private static int num = 0;
+  private volatile static int num = 0;
 
   // 主线程
   public static void main(String[] args) {
 
     // 线程1
+    // 针对主内存的变化，线程1是不知道的
     new Thread(
             () -> {
               while (num == 0) {}
